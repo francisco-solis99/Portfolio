@@ -1,0 +1,436 @@
+
+/* colores que usa leonidas
+    gris oscuro = #1d252c  -> header
+    gris claro = #626262   --> 
+    background gris = #1b2127  --> hero
+    celeste = #026fff -->letras strong
+
+*/
+
+
+
+
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* uso de comillas con fuentes que llevan un espacio en su nombre */
+
+/* Primera forma de hacerlo */
+/* .container{
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+body{
+    /* background-color: #1e354d;   */
+}
+
+
+/* TODO: ESTILOS HEADER  */
+
+
+/* leonidas usa la propiedada height: inherit con fines didacticos 
+para hereadar la altura del header y aplicarle un display flex a
+las ancla para luego centarlas verticalmnete */
+.header {
+    background-color: rgb(30, 53, 77);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 90px;
+
+}
+
+.header__logo{
+    margin: 0;
+    width: 17%;
+    height: inherit; /*Heredar el alto del padre es decr 150 px*/
+    display: flex;
+    align-items: center;
+}
+
+.header__imagen{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.header__innobytes{
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+
+/* .header__menu{ */
+    /* display: flex; */
+    /* align-items: center; */
+    
+/* } */
+
+.header__list-ol{
+    list-style: none;
+    display: flex;
+    
+}
+
+.header__item{
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.header__link{
+    color: white;
+    text-decoration: none;
+    transition: all ease-in 300ms;
+}
+
+.header__link:hover{
+    color: rgb(105, 165, 245);
+}
+
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+
+
+
+
+/* TODO: ESTILOS HERO */
+.hero {
+    height: 300px;
+    /* background-image: url(images/canada.jpg); */
+    /* background-position-x: right; */
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-color: #FFE53B; */
+    background: linear-gradient(169deg, rgb(85, 206, 250) 14%, rgb(55, 236, 155) 86%);
+    /* background-image: linear-gradient(107deg, #FFE53B 0%, #FF2525 91%); */
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hero__titulo{
+    line-height: 1.5; /*es igual a poner 150px o 150%*/
+    letter-spacing: -.2px;
+    font-size: 40px;
+    color: white;
+
+    /* margin: 0; */
+    /* TODO: responsive design con margenes
+    margin-right: 520px */
+}
+
+.hero__titulo strong{
+    color: #026fff;
+}
+
+.hero__imagen{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* TODO: ESTILOS PROYECTOS */
+
+.project{
+    background-color: #fafafa;
+    padding: 20px;
+
+}
+
+.project__general-title, .title-experience{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.project_portfolio{
+    
+    /* border-color: teal;
+    border-style: solid;
+    border-width: 1px;  */
+    /* TODO:
+     Lo anterior resumido en: */
+    border: 1px solid teal;
+    border-radius: 10px;
+
+    /* TODO: 
+     si no se pone un color de fondo, este sera el del color de la fuente del elemento por defecto */
+
+
+
+     margin: 10px 0 15px;
+     padding: 20px;
+     background: white;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+
+}
+
+
+.project__details{
+    width: 500px;
+}
+
+
+.project__title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project__course, .project__date, .project__url{
+    margin: 10px 0;
+}
+
+.project__descripction{
+    font-size: 22px;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+.project__imageContainer{
+    width: 500px;
+    height: 280px;
+    
+}
+
+.project__image{
+    border-radius: 20px;
+    height: inherit;
+}
+
+
+/* EVENTOS */
+.title-experience--space{
+    margin-left: 20px;
+}
+
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience__event{
+    margin: 10px;
+    width: 480px;
+    /* border: 1px red solid; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+
+    flex-shrink: 0;
+}
+
+.experience__event-wraper{
+    margin: 0;
+}
+
+.experience__image{
+    width: 480px;
+    height: 200px;
+ 
+    /* object-fit: cover; sirve para cuando le damos tamaño a una imagen que no es proporcional con su tamaño original, y con esta propiedad hacemos que se mantenga proporcional 
+    con el tamaño sin estar pixeleada y que se vea mal (como aplastada)*/
+    object-fit: cover;
+
+
+}
+
+.experience__details{
+    margin: 20px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;  /*se vera mas adelante*/
+    padding: 40px;
+    text-align: center;
+}
+
+.experience__event-title{
+    text-align: center;
+}
+
+.experience__event-description{
+    text-align: left;
+}
+
+.experience__event-url{
+    text-decoration: none;
+    border: 2px solid #417dcc;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #026fff;
+    cursor: pointer;
+    transition: 300ms all ease-in;
+}
+
+.experience__event-url:hover{
+    background-color:#417dcc;
+    color: white;
+}
+
+/* Contacto */
+.contact{
+    background-color: rgb(32, 189, 163);
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+
+
+.social__link{
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social__link--twitter{
+    background-image: url('images/twitter.svg');
+    /* iamagens que se peuden escalar y nunca van a perder su resolucion
+        svg --> ScalawordVectorGraphics */
+}
+.social__link--fb{
+    background-image: url('images/fb.svg');
+}
+
+.social__link--twitter{
+    background-image: url('images/twitter.svg');
+}
+
+.social__link--github{
+    background-image: url('images/github.svg');
+}
+
+.social__link--instagram{
+    background-image: url('images/insta.svg');
+}
+
+
+.contact__form-email input{
+    border-color: gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-style: solid;
+
+}
+
+.contact__form-email button{
+    /* display: block; */
+    background-color: transparent;
+    color: white;
+    margin-left: 5px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: 300ms all ease-in;
+}
+
+.contact__form-email button:hover{
+    background-color: white;
+    color: rgb(32, 189, 163);
+}
+
+.contact__title{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* /* footer */
+
+.footer{
+    background-color: rgb(30, 53, 77);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer__imagen{
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .flexblox{
+    background-color: sandybrown;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+} */
+
+/* .flexblox div:nth-child(1){
+    align-self: flex-end;
+} */
+
+
+
+/* .flexblox div:nth-child(2){
+    align-self: flex-start;
+    order: 2;
+}
+
+.son{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 4px solid red;
+    background-color: salmon;
+    font-size: 70px;
+    flex-shrink: 0;
+    text-align: center;
+    color: white;
+
+
+} */
