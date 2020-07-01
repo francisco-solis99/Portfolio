@@ -45,6 +45,7 @@ las ancla para luego centarlas verticalmnete */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     height: 90px;
 
@@ -98,6 +99,8 @@ las ancla para luego centarlas verticalmnete */
 }
 
 
+
+
 /* Contenedor que permite alinear todo horizontal y est en cada seccion de la web site */
 .wrapper{
     max-width: 1000px; /*De fijo a variable pasando a un ancho maximo*/
@@ -105,6 +108,7 @@ las ancla para luego centarlas verticalmnete */
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
+    flex-wrap: inherit;
 }
 
 
@@ -125,6 +129,7 @@ las ancla para luego centarlas verticalmnete */
     margin: 0;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -191,13 +196,14 @@ las ancla para luego centarlas verticalmnete */
      display: flex;
      justify-content: space-between;
      align-items: center;
+     flex-wrap: wrap;
 
 
 }
 
 
 .project__details{
-    width: 500px;
+    width: 400px;
 }
 
 
@@ -221,14 +227,14 @@ las ancla para luego centarlas verticalmnete */
 
 
 .project__imageContainer{
-    width: 500px;
+    width: 400px;
     height: 280px;
-    
 }
 
 .project__image{
     border-radius: 20px;
     height: inherit;
+    width: inherit;
 }
 
 
@@ -311,6 +317,7 @@ las ancla para luego centarlas verticalmnete */
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -383,6 +390,7 @@ las ancla para luego centarlas verticalmnete */
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    flex-wrap: wrap;
 }
 
 .footer__imagen{
