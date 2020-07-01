@@ -53,14 +53,14 @@ las ancla para luego centarlas verticalmnete */
 .header__logo{
     margin: 0;
     width: 17%;
-    height: inherit; /*Heredar el alto del padre es decr 150 px*/
+    height: inherit; /*Heredar el alto del padre es decr 90 px*/
     display: flex;
     align-items: center;
 }
 
 .header__imagen{
     width: 90px;
-    height: 90px;
+    height: inherit;
     border-radius: 10px;
 }
 
@@ -97,8 +97,10 @@ las ancla para luego centarlas verticalmnete */
     color: rgb(105, 165, 245);
 }
 
+
+/* Contenedor que permite alinear todo horizontal y est en cada seccion de la web site */
 .wrapper{
-    width: 1000px;
+    max-width: 1000px; /*De fijo a variable pasando a un ancho maximo*/
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
