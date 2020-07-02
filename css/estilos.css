@@ -110,6 +110,7 @@ las ancla para luego centarlas verticalmnete */
     justify-content: inherit;
     align-items: inherit;
     flex-wrap: inherit;
+    flex-direction: inherit;
 }
 
 
