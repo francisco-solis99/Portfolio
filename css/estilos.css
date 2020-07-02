@@ -98,11 +98,12 @@ las ancla para luego centarlas verticalmnete */
 }
 
 .wrapper{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
+    flex-direction: inherit;
 }
 
 
@@ -448,7 +449,64 @@ las ancla para luego centarlas verticalmnete */
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
+   /* TODO: */
+    /* PRIMERA OPCION DE APLICAR ESTILOS POR MI VERSION CON FELX DIRECTION */
+    .header {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .header__list-ol{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header__item{
+        height: 50px;
+    }
+
+     .header__logo{
+        width: auto;
+    }
+   
+    
+    /* TODO: */
+    /* SEGUNDA OPCION REALIZADA POR LEONIDAS ENEL VIDEO */
+    /* .header {
+        height: auto;
+        display: block;
+    }
+
+
+    .header__list-ol{
+       display: block;
+    }
+    
+    .header__item{
+        height: 50px;
+    }
+
+    .header__link{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__logo{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    } */
+
+    /* ESTILOS PARA QUE SE VEA MEJOR (EXTRA) */
+    .header__imagen{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .header__innobytes{
+        margin-left: 10px;
+    }
 
 }
 
