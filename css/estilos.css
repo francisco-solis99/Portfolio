@@ -205,7 +205,7 @@ las ancla para luego centarlas verticalmnete */
 
 
 .project__details{
-    width: 400px;
+    width: 50%;
 }
 
 
@@ -229,14 +229,16 @@ las ancla para luego centarlas verticalmnete */
 
 
 .project__imageContainer{
-    width: 400px;
-    height: 280px;
+    width: 40%;
+    margin: 0;
 }
 
 .project__image{
     border-radius: 20px;
-    height: inherit;
-    width: inherit;
+    /* TODO: es mejor usar un acho auto que eun ancho al 100%*/
+    max-width: 100%;  /*En este caso si que se usa el 100%, pero el secreto de los img con los figure es el max-width y posiblemnte el object-fit cover para no perder la calidad de la imagen y su vista*/
+    object-fit: cover;
+    
 }
 
 
@@ -519,18 +521,71 @@ las ancla para luego centarlas verticalmnete */
         margin-left: 10px;
     }
 
+    .project_portfolio{
+        display: block;
+    }
+    /* TODO: es mejor usar un acho auto que eun ancho al 100%*/
+    .project__details{
+        width: auto;
+        font-size: 16px;
+    }
+    
+    .project__imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project__image{
+        width: auto;
+    }
+
+    .project__title{
+        font-size: 1.5em; /*equivalente a 16px * 1.5*/
+        margin-bottom: .3em;
+    }
+
+    .project__course{
+        font-size: .7em; /*equivalente a 16px * 0.7*/
+    }
+
+    .project__date{
+        font-size: 1em;
+    }
+
+    .project__url{
+        font-size: 1em;
+    }
+
+    .project__descripction{
+        font-size: .8em; /*equivalente a 16px * 0.8*/
+    }
+
+    .project__course, .project__date, .project__url{
+        margin: 0.3em 0;
+    }
 }
 
 
 
 @media screen and (max-width:480px){
 
+    .project__details{
+        font-size: 12px;
+    }
+
+    .project__general-title{
+        font-size: 1.28rem;
+        text-align: center;
+    }
 }
 
 
 
 @media screen and (max-width:320px){
-
+    .project__details{
+        font-size: 10px;
+    }
+   
 }
 
 
