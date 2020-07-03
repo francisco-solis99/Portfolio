@@ -119,7 +119,9 @@ las ancla para luego centarlas verticalmnete */
 
 /* TODO: ESTILOS HERO */
 .hero {
-    height: 300px;
+    
+    padding: 1em;
+
     /* background-image: url(images/canada.jpg); */
     /* background-position-x: right; */
     /* background-size: 500px 300px; */
@@ -563,6 +565,17 @@ las ancla para luego centarlas verticalmnete */
     .project__course, .project__date, .project__url{
         margin: 0.3em 0;
     }
+
+
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero__imagen{
+        max-width: 100%;
+    }
+    
+    
 }
 
 
@@ -577,6 +590,10 @@ las ancla para luego centarlas verticalmnete */
         font-size: 1.28rem;
         text-align: center;
     }
+
+    .hero__titulo{
+        font-size: 32px;
+    }
 }
 
 
@@ -584,6 +601,10 @@ las ancla para luego centarlas verticalmnete */
 @media screen and (max-width:320px){
     .project__details{
         font-size: 10px;
+    }
+
+    .hero__titulo{
+        font-size: 24px;
     }
    
 }
