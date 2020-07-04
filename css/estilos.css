@@ -255,8 +255,8 @@ las ancla para luego centarlas verticalmnete */
 }
 
 .experience__event{
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     /* border: 1px red solid; */
     border-radius: 10px;
     overflow: hidden;
@@ -562,6 +562,23 @@ las ancla para luego centarlas verticalmnete */
 
     .project__course, .project__date, .project__url{
         margin: 0.3em 0;
+    }
+
+    .experience__event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    /* TODO://la etiqueta vale mas que la clase */
+    .experience__image{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .experience__details{
+        /* 1em = 16px */
+        margin: -2em .5em .5em .5em;
+        padding: 1em;
+        /* TODO: propiedad interesante--> text-overflow: ellipsis/scroll; */
     }
 }
 
