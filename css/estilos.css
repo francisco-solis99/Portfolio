@@ -327,32 +327,10 @@ las ancla para luego centarlas verticalmnete */
 
 
 .social__link{
-    width: 50px;
+    font-size: 3.125em;
     display: inline-block;
-    height: 50px;
-    background-size: 50px 50px;
     margin: 0 10px;
-}
-
-.social__link--twitter{
-    background-image: url('images/twitter.svg');
-    /* iamagens que se peuden escalar y nunca van a perder su resolucion
-        svg --> ScalawordVectorGraphics */
-}
-.social__link--fb{
-    background-image: url('images/fb.svg');
-}
-
-.social__link--twitter{
-    background-image: url('images/twitter.svg');
-}
-
-.social__link--github{
-    background-image: url('images/github.svg');
-}
-
-.social__link--instagram{
-    background-image: url('images/insta.svg');
+    color: white;
 }
 
 
