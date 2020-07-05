@@ -327,7 +327,7 @@ las ancla para luego centarlas verticalmnete */
 
 
 .social__link{
-    font-size: 3.125em;
+    font-size: 2.825em;
     display: inline-block;
     margin: 0 10px;
     color: white;
@@ -347,9 +347,8 @@ las ancla para luego centarlas verticalmnete */
     background-color: transparent;
     color: white;
     margin-left: 5px;
-    padding: 10px 0px;
-    border-radius: 5px;
-    width: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 300ms all ease-in;
 }
@@ -541,6 +540,23 @@ las ancla para luego centarlas verticalmnete */
     .project__course, .project__date, .project__url{
         margin: 0.3em 0;
     }
+
+    .contact__form-email button{
+        display: block;
+    }
+
+    .social__link{
+        font-size: 2.425em;
+    }
+
+    .contact__form-email input{
+        padding: 5px;
+    }
+
+    .contact{
+        padding: 1.5em 0;
+    }
+   
 }
 
 
@@ -555,6 +571,21 @@ las ancla para luego centarlas verticalmnete */
         font-size: 1.28rem;
         text-align: center;
     }
+
+    .contact{
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .contact__form-email button{
+        margin: 1rem auto;
+    }
+
+    .contact__title{
+        margin-top: 0;
+    }
+    
 }
 
 
