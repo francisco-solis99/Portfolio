@@ -329,38 +329,16 @@ las ancla para luego centarlas verticalmnete */
 
 
 .social__link{
-    width: 50px;
+    font-size: 2.225em;
     display: inline-block;
-    height: 50px;
-    background-size: 50px 50px;
-    margin: 0 10px;
-}
-
-.social__link--twitter{
-    background-image: url('images/twitter.svg');
-    /* iamagens que se peuden escalar y nunca van a perder su resolucion
-        svg --> ScalawordVectorGraphics */
-}
-.social__link--fb{
-    background-image: url('images/fb.svg');
-}
-
-.social__link--twitter{
-    background-image: url('images/twitter.svg');
-}
-
-.social__link--github{
-    background-image: url('images/github.svg');
-}
-
-.social__link--instagram{
-    background-image: url('images/insta.svg');
+    margin: 0 .2em;
+    color: white;
 }
 
 
 .contact__form-email input{
     border-color: gray;
-    padding: 10px 20px;
+    padding: .5em 1em;
     border-radius: 5px;
     border-style: solid;
 
@@ -371,9 +349,8 @@ las ancla para luego centarlas verticalmnete */
     background-color: transparent;
     color: white;
     margin-left: 5px;
-    padding: 10px 0px;
-    border-radius: 5px;
-    width: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 300ms all ease-in;
 }
@@ -395,13 +372,17 @@ las ancla para luego centarlas verticalmnete */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
     flex-wrap: wrap;
 }
 
 .footer__imagen{
     vertical-align: middle;
-    margin: 0 10px;
+    margin: 0 10px;    
+}
+
+.footer__text{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -459,7 +440,9 @@ las ancla para luego centarlas verticalmnete */
 /* USO DE DESKTOP FIRST EMPEZANDO DE LOS MAS A LO MENOS */
 
 @media screen and (max-width:1024px){
-
+    .wrapper{
+        padding: 0 1em ;
+    }
 }
 
 
@@ -591,6 +574,38 @@ las ancla para luego centarlas verticalmnete */
         padding: 1em;
         /* TODO: propiedad interesante--> text-overflow: ellipsis/scroll; */
     }
+    .contact__form-email button{
+        display: block;
+    }
+
+    .social__link{
+        font-size: 2.015em;
+    }
+
+    .contact__form-email input{
+        padding: 5px;
+    }
+
+    .contact{
+        padding: 1.5em 0;
+    }
+
+    .footer{
+        display: block;
+        padding: 0 1em;
+        border: 1px solid transparent;
+        text-align: center;
+    }
+    
+    .footer__imagen{
+        margin: 0 1em;
+    }
+
+    .footer__text{
+        display: initial
+    }
+    
+   
 }
 
 
@@ -609,6 +624,22 @@ las ancla para luego centarlas verticalmnete */
     .hero__titulo{
         font-size: 32px;
     }
+    .contact{
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .contact__form-email button{
+        margin: 1rem auto;
+    }
+
+    .contact__title{
+        margin-top: 0;
+    }
+
+    
+    
 }
 
 
