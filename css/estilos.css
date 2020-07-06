@@ -443,6 +443,33 @@ las ancla para luego centarlas verticalmnete */
     .wrapper{
         padding: 0 1em ;
     }
+
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+        flex-direction: row-reverse;
+    }
+    
+    .hero__titulo{
+        font-size: 2em;
+        z-index: 2;
+        text-shadow: 1px 2px 2px#000;
+        
+    }
+    .hero__imagen{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0;
+        object-fit: cover;
+        
+    }
 }
 
 
@@ -506,6 +533,22 @@ las ancla para luego centarlas verticalmnete */
         margin-left: 10px;
     }
 
+    .hero {
+        flex-direction: row;
+    }
+    .hero__imagen{
+        filter: blur(1px);
+        /* opacity: 95%; */
+        /* object-position:  right right; */
+    }
+
+    .hero__titulo{
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.5);
+        padding: .2em;
+        border-radius: 8px;
+    }
+
     .project_portfolio{
         display: block;
     }
@@ -549,16 +592,6 @@ las ancla para luego centarlas verticalmnete */
         margin: 0.3em 0;
     }
 
-
-    .hero {
-        flex-direction: column;
-    }
-    
-    .hero__imagen{
-        max-width: 100%;
-    }
-    
-    
     .experience__event{
         width: auto;
         flex-shrink: initial;
@@ -622,7 +655,7 @@ las ancla para luego centarlas verticalmnete */
     }
 
     .hero__titulo{
-        font-size: 32px;
+        font-size: 1.5em;
     }
     .contact{
         height: auto;
@@ -650,7 +683,16 @@ las ancla para luego centarlas verticalmnete */
     }
 
     .hero__titulo{
-        font-size: 24px;
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    .hero{
+        padding: 2em 1em;
+    }
+
+    .hero__imagen{
+        object-position:  center 125%;
     }
    
 }
