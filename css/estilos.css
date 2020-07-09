@@ -386,6 +386,26 @@ las ancla para luego centarlas verticalmnete */
 }
 
 
+.burger__menu{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #417dcc;
+    border-radius: 50%;
+    display: none;
+    line-height: 2.5em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 4;
+    left: 0.3125em;
+    top: 0.3125em;
+}
+
+.burger-button{
+     color: white;
+}
+
+
 
 
 
@@ -475,7 +495,12 @@ las ancla para luego centarlas verticalmnete */
 
 
 @media screen and (max-width:767px){
-   /* TODO: */
+    .burger__menu{
+        display: block;
+      
+    }
+   
+    /* TODO: */
     /* PRIMERA OPCION DE APLICAR ESTILOS POR MI VERSION CON FELX DIRECTION */
     .header {
         height: auto;
