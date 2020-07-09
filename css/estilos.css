@@ -499,6 +499,29 @@ las ancla para luego centarlas verticalmnete */
         display: block;
       
     }
+
+    .header__menu{
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        height: 100vh; /*o tambien aplicar un bottom:0 para que se estire el menu*/
+        width: 100vw;
+        background-color: rgb(38, 191, 191,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        transition: 300ms ease-in all;
+    }
+
+    .header__menu.is-active{
+        left: 0;
+    }
+    .header__link{
+        font-size: 2em;
+        text-decoration: underline;
+        
+    }
    
     /* TODO: */
     /* PRIMERA OPCION DE APLICAR ESTILOS POR MI VERSION CON FELX DIRECTION */
@@ -510,10 +533,13 @@ las ancla para luego centarlas verticalmnete */
     .header__list-ol{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        padding: 0;
     }
     
     .header__item{
-        height: 50px;
+        height:4em;
+        margin-bottom: .7em;
     }
 
      .header__logo{
