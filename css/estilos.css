@@ -459,7 +459,7 @@ las ancla para luego centarlas verticalmnete */
 /* RESPONSIVE DESIGN  */
 /* USO DE DESKTOP FIRST EMPEZANDO DE LOS MAS A LO MENOS */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
     .wrapper{
         padding: 0 1em ;
     }
