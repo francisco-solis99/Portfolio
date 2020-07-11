@@ -511,11 +511,12 @@ las ancla para luego centarlas verticalmnete */
         align-items: center;
         justify-content: center;
         z-index: 3;
-        transition: 300ms ease-in all;
+        transition: 500ms ease-in all;
     }
 
     .header__menu.is-active{
         left: 0;
+        transition: 500ms ease-in all;
     }
     .header__link{
         font-size: 2em;
