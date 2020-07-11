@@ -20,33 +20,46 @@
         console.log(burgerButton);
 
     */
+    
 
-    //Evaluar sin imporatar nada, si ipad(el media querie) hace match con el width de la ventana
-    if(ipad.matches){   // es como si se pusiera -->  if(widthViewport <= 767)
-        burgerButton.addEventListener('click', hideShow);
-        menu.addEventListener('click', hideMenu);
-    }
+    
+    //FIXME: AYUDA EN EL CASO DE CARGAR DESDE UN TAMAÑO MOVIL
+        /*Evaluar sin importar el viewport, si ipad(el media querie) hace match con el width de la ventana  console.log(ipad.matches);
+        if(ipad.matches){   // es como si se pusiera -->  if(widthViewport <= 767)
+            burgerButton.addEventListener('click', hideShow);  
+            menu.addEventListener('click', hideMenu);
+        }
+    */
 
 
+
+    //TODO:AYUDA EN EL CASO DE CARGAR DESDE UN TAMAÑO MOVIL
+    //Ejecutar la funcion de validacion sin importar el tamaño del viewport
+    validation(ipad);
+
+
+
+
+    //TODO: AYUDA SI SE HACE RESIZE EN CUALQUIER PUNTO DEL WEB SITE
     //Agregando un listener al elemento ipad
-    ipad.addListener(validation); //addEventListener: Funcion que va escuchar un evento como click, hover, entre otros mas
+    ipad.addListener(validation); //addEventListener: Se agrega un afuncion que va a escuchar si se hace resize, si pasa de algo mayor a 767 a algo menor de ese tamaño del media querie
 
     function validation(evento){
         // console.log(evento.matches);       <--Evaluar si hace match(true o false)
         if(evento.matches){
             burgerButton.addEventListener('click', hideShow);
             menu.addEventListener('click', hideMenu);
-            // console.log('hola evento');
+            // console.log('hola evento');   <--Evaluar si se ejecuta
         }
         else{
             burgerButton.removeEventListener('click', hideShow);
-            // console.log('adios evento');
+            // console.log('adios evento');  <--Evaluar si se ejecuta
             menu.removeEventListener('click', hideMenu);
         }
-
-
     }
 
+
+    //TODO:Funciones que se activan para al ser escuchado su evento
 
     function hideMenu(){
         menu.classList.remove('is-active');
@@ -56,7 +69,7 @@
         
         menu.classList.toggle('is-active');
 
-        // TODO: Otra alternativa
+        // FIXME: Otra alternativa
         /*
         if(menu.classList.contains('is-active')){
             menu.classList.remove('is-active');    
