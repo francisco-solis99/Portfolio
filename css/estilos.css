@@ -490,6 +490,10 @@ las ancla para luego centarlas verticalmnete */
         object-fit: cover;
         
     }
+
+    .title-experience{
+        margin-left: 0;
+    }
 }
 
 
@@ -624,6 +628,12 @@ las ancla para luego centarlas verticalmnete */
         margin-bottom: .3em;
     }
 
+    .project__general-title,.title-experience{
+        margin: .5em 0;
+    }
+
+    
+
     .project__course{
         font-size: .7em; /*equivalente a 16px * 0.7*/
     }
@@ -637,7 +647,7 @@ las ancla para luego centarlas verticalmnete */
     }
 
     .project__descripction{
-        font-size: .8em; /*equivalente a 16px * 0.8*/
+        font-size: 1em; /*equivalente a 16px * 0.8*/
     }
 
     .project__course, .project__date, .project__url{
@@ -698,12 +708,11 @@ las ancla para luego centarlas verticalmnete */
 @media screen and (max-width:480px){
 
     .project__details{
-        font-size: 12px;
+        font-size: 14px;
     }
 
-    .project__general-title{
-        font-size: 1.28rem;
-        text-align: center;
+    .project__general-title, .title-experience{
+        font-size: 1.1em;
     }
 
     .hero__titulo{
