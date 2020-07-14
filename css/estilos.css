@@ -92,10 +92,17 @@ las ancla para luego centarlas verticalmnete */
     color: white;
     text-decoration: none;
     transition: all ease-in 300ms;
+    border: 1px solid white;
+    padding: .5em 1.2em;
+    border-radius: 4px;
+    
 }
 
 .header__link:hover{
     color: rgb(105, 165, 245);
+    -webkit-box-shadow: -9px 6px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 6px 13px -6px rgba(0,0,0,0.75);
+    box-shadow: -9px 6px 13px -6px rgba(0,0,0,0.75);
 }
 
 
@@ -164,9 +171,8 @@ las ancla para luego centarlas verticalmnete */
 /* TODO: ESTILOS PROYECTOS */
 
 .project{
-    background-color: #fafafa;
-    padding: 20px;
-
+    background-color: #fafafa; 
+    position: relative;   
 }
 
 .project__general-title, .title-experience{
@@ -177,6 +183,8 @@ las ancla para luego centarlas verticalmnete */
     font-size: 24px;
     margin-bottom: 30px;
 }
+
+
 
 .project_portfolio{
     
@@ -245,6 +253,10 @@ las ancla para luego centarlas verticalmnete */
 
 
 /* EVENTOS */
+.onAir{
+    position: relative;
+}
+
 .title-experience{
     padding-left: .7em;
 }
@@ -263,7 +275,7 @@ las ancla para luego centarlas verticalmnete */
     border-radius: 10px;
     overflow: hidden;
     background-color: #f4fbff;
-
+    box-shadow: 1px 1px 10px 1px lightgray;
     flex-shrink: 0;
 }
 
@@ -415,7 +427,6 @@ las ancla para luego centarlas verticalmnete */
 
 
 
-
 /* .flexblox{
     background-color: sandybrown;
     height: 300px;
@@ -462,7 +473,13 @@ las ancla para luego centarlas verticalmnete */
 @media screen and (max-width:1023px){
     .wrapper{
         padding: 0 1em ;
+        
     }
+
+    .borde{
+        border-left: 10px solid #026fff;
+    }
+ 
 
     .hero {
         height: auto;
@@ -494,6 +511,21 @@ las ancla para luego centarlas verticalmnete */
     .title-experience{
         margin-left: 0;
     }
+
+    .project__general-title:before, .title-experience:before{
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 2px;
+        font-size: 10px;
+        color: #026fff; 
+        width: 22px;
+        height: 22px;
+        background-color: #026fff;
+        border-radius: 50%;
+    }
+
+ 
 }
 
 
@@ -525,7 +557,8 @@ las ancla para luego centarlas verticalmnete */
     .header__link{
         font-size: 2em;
         text-decoration: underline;
-        
+        border: none;
+        padding: 0;        
     }
    
     /* TODO: */
@@ -544,7 +577,8 @@ las ancla para luego centarlas verticalmnete */
     
     .header__item{
         height:4em;
-        margin-bottom: .7em;
+        margin-bottom: 1em;
+
     }
 
      .header__logo{
